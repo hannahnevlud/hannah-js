@@ -73,6 +73,37 @@
   let thirdTry = makeName("Robert", "\"Beto\"", "O'Rourke");
   console.log(thirdTry.toUpperCase());
 
+//Making better name function 
+
+  function makeBetterName (firstName, middleName, lastName){
+    if (middleName.length === 1) {
+        middleName = middleName + ".";
+        let fullName = firstName + " " + middleName + " " + lastName;
+        return fullName;
+    } else {
+        let fullName = firstName + " " + middleName + " " + lastName;
+        return fullName;
+      }
+    } 
+
+  console.log(makeBetterName("Joan", "Marie", "Larkin"));
+  console.log(makeBetterName("Donald", "F", "Trump"));
+
+  
+  function whoWon (home, away){
+    if (home > away) {
+      return "The home team won";
+    } else {
+      return "The away team won";
+    } else if (home = away){
+      return "Tie game";
+    }
+  }
+  
+
+  console.log(whoWon(21, 7));
+  console.log(whoWon(7, 35)); 
+
 
 
   </script>
