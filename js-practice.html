@@ -49,13 +49,32 @@
 
   console.log("Using Functions:");
 
-  //Functions to square numbers
+  //Function to square numbers
   function makeSquare(theNumb) {
     let squared = theNumb * theNumb;
     return squared;
   }
+
   let try01 = makeSquare(3);
   console.log(try01);
+
+  //Functions on your own 
+  function makeName (first, middle, last){
+    let fullName = (first + " " + middle + " " + last)
+    return fullName;
+  }
+
+  let firstTry = makeName("Hannah", "Elizabeth", "Nevlud");
+  console.log(firstTry);
+
+  let secondTry = makeName("Stephanie", "Beth", "Nevlud");
+  console.log(secondTry);
+
+  let thirdTry = makeName("Robert", "\"Beto\"", "O'Rourke");
+  console.log(thirdTry.toUpperCase());
+
+
+
   </script>
 </body>
 </html>
