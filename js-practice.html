@@ -93,17 +93,17 @@
   function whoWon (home, away){
     if (home > away) {
       return "The home team won";
+    } else if (home === away) {
+      return "Tie game";
     } else {
       return "The away team won";
-    } else if (home = away){
-      return "Tie game";
     }
   }
   
 
   console.log(whoWon(21, 7));
   console.log(whoWon(7, 35)); 
-
+  console.log(whoWon(14, 14));
 
 
   </script>
